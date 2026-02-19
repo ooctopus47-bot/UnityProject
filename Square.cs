@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Square : MonoBehaviour
 {
-	public Vector2 targetPosition;
-	public float moveStep;
+    public Vector2 targetPosition;
+    public float moveStep;
     public bool isTrap;
     public float speedFactor;
     public float scaleFactor;
@@ -27,7 +27,7 @@ public class Square : MonoBehaviour
             targetPosition, moveStep * Time.deltaTime);
 
 
-        if((Vector2)transform.position == targetPosition)
+        if ((Vector2)transform.position == targetPosition)
         {
             targetPosition = GetRandomPoint();
         }
